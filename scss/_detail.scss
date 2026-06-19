@@ -293,7 +293,7 @@
     }
 
     & p a {
-        color: #b80000;
+        color: #001AFF;
         font-style: italic;
         
         &:hover {
@@ -308,6 +308,152 @@
         word-break: break-word;
         color: #333;
         font-family: "Noto Serif", serif;
+
+    }
+
+    // &.size-plus p {
+    //     font-size: 21px;
+    // }
+    & ul {
+        padding-left: 30px;
+    }
+    & ul li {
+        list-style: disc;
+    }
+    &  h2,
+    &  h3,
+    &  h4,
+    &  h5,
+    &  h6 {
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #181E23;
+    }
+    &  h2 {
+        font-size: 24px;
+    }
+    &  h3 {
+        font-size: 22px;
+    }
+    &  h4 {
+        font-size: 20px;
+    }
+    &  h5 {
+        font-size: 18px;
+    }
+    &  h6 {
+        font-size: 16px;
+    }
+
+    & blockquote {
+        background-color: #f4f4f4;
+        padding: 18px 15px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+
+        & p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    table {
+        width: 100%;
+        margin: 20px 0;
+        background: #fff;
+        overflow: hidden;
+        // border: 1px solid;
+        tr {
+            border-bottom: 1px solid;
+        }
+        th {
+            padding: 15px;
+            font-size: 15px;
+            border-bottom: 1px solid;
+            strong {
+                color: #993333;
+            }
+        }
+        td {
+            padding: 15px;
+            font-size: 15px;
+            border-bottom: 1px solid;
+            text-align: center;
+            strong {
+                color: #993333;
+            }
+        }
+
+        p {
+            word-break: normal;
+        }
+    }
+
+}
+.detail-content-secondary{
+    h1 {
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    & figure {
+        margin-bottom: 1.25rem;
+
+        img {
+            width: 100%;
+            height: auto !important;
+            margin: auto;
+            border-radius: 5px;
+        }
+    }
+    & figure figcaption {
+        background: #F7F7F7;
+        padding: 0.625rem 0.9375rem;
+        font-size: 14px;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        line-height: 1.25rem;
+        color: #555;
+        // text-align: center;
+        // font-style: italic;
+    }
+    & figure figcaption em {
+        font-style: italic;
+    }
+    & figure h2,
+    figure h3,
+    figure h4,
+    figure h5,
+    figure h6,
+    figure p {
+        font-weight: normal !important;
+        font-size: 14px !important;
+        margin: 0 auto;
+        line-height: 1.3 !important;
+        color: #555;
+    }
+
+    & a {
+        color: #001AFF;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &  p,
+    &  li {
+        font-size: 16px;
+        margin-bottom: 24px;
+        line-height: 160%;
+        word-break: break-word;
+        color: #222;
+        font-family: "Arial";
 
     }
 
@@ -630,13 +776,13 @@
                 linear,
                 50% 0%,
                 50% 100%,
-                color-stop(0%, #B80000),
-                color-stop(100%, #B80000)
+                color-stop(0%, #001AFF),
+                color-stop(100%, #001AFF)
             );
-            background-image: -webkit-linear-gradient(#B80000, #B80000);
-            background-image: -moz-linear-gradient(#B80000, #B80000);
-            background-image: -o-linear-gradient(#B80000, #B80000);
-            background-image: linear-gradient(#B80000, #B80000);
+            background-image: -webkit-linear-gradient(#001AFF, #001AFF);
+            background-image: -moz-linear-gradient(#001AFF, #001AFF);
+            background-image: -o-linear-gradient(#001AFF, #001AFF);
+            background-image: linear-gradient(#001AFF, #001AFF);
             background-repeat: no-repeat;
             cursor: pointer;
             -webkit-appearance: none;
@@ -663,7 +809,7 @@
             width: 14px;
             height: 14px;
             border: 0;
-            background: #B80000;
+            background: #001AFF;
             border-radius: 100%;
             -webkit-appearance: none;
         }
@@ -672,7 +818,7 @@
             width: 14px;
             height: 14px;
             border: 0;
-            background: #B80000;
+            background: #001AFF;
             border-radius: 100%;
             -webkit-appearance: none;
         }
@@ -714,7 +860,7 @@
         &  h4,
         &  h5,
         &  h6 {
-            color: #b80000;
+            color: #001AFF;
         }
 
         figure figcaption {

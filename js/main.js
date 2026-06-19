@@ -115,6 +115,36 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     }
+    // Khởi tạo slider với 1 item secondary
+    function initSliderOneItemsSecondary() {
+        const oneSecondarySlides = document.querySelectorAll(".js__oneSecondarySlidesContainer");
+        if (oneSecondarySlides) {
+            oneSecondarySlides.forEach((item) => {
+                var slider = item.querySelector(".js__oneSecondarySlide");
+                var next = item.querySelector(".swiper-button-next");
+                var prev = item.querySelector(".swiper-button-prev");
+                var pagi = item.querySelector(".swiper-pagination");
+
+                new Swiper(slider, {
+                    slidesPerView: 1.3,
+                    spaceBetween: 10,
+                    slidesPerGroup: 1,
+                    navigation: {
+                        nextEl: next || null,
+                        prevEl: prev || null,
+                    },
+                    pagination: {
+                        el: pagi,
+                        clickable: true,
+                    },
+                    // autoplay: {
+                    //     delay: 3000,
+                    //     disableOnInteraction: false,
+                    // },
+                });
+            });
+        }
+    }
 
     // khởi tạo slider với 2 item
     function initSliderTwoItems() {
@@ -792,6 +822,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // slide
         initSliderAutoItems();
         initSliderOneItems();
+        initSliderOneItemsSecondary();
         initSliderTwoItems();
         initSliderTwoSecondaryItems();
         initSliderTwoTertiaryItems();
