@@ -2928,6 +2928,11 @@ p {
   background-color: #344e86;
 }
 
+.sticky-side {
+  position: sticky;
+  top: 20%;
+}
+
 .share-detail__container {
   position: sticky;
   top: 20%;
